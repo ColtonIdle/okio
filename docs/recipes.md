@@ -98,7 +98,7 @@ it will return null.
 
     ```kotlin
     @Throws(IOException::class)
-    fun readLines(file: File) {
+    fun readLines(path: Path) {
       FileSystem.SYSTEM.read(path) {
         while (true) {
           val line = readUtf8Line() ?: break
